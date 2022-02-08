@@ -516,8 +516,8 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .platforms__lang:hover {
@@ -528,8 +528,10 @@ img {
   margin-left: 5px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
 
 .lang {
@@ -1258,6 +1260,12 @@ img {
   line-height: 24px;
   letter-spacing: 2px;
   color: #FFB548;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.quotes__author:hover {
+  opacity: 0.8;
 }
 
 .quotes__job {
