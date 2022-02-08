@@ -1,0 +1,118 @@
+.features{
+   background-image: url(../../img/features-bgimage.png);
+   background-repeat: no-repeat;
+   background-position: calc(50%) calc(50% - 12px);
+   background-size: 100%;
+   padding: 170px 0px 255px 0px;
+   margin-bottom: 5px;
+   position: relative;
+   z-index: 1;
+}
+.features__info{
+   width: 415px;
+   margin-left: auto;
+   margin-right: 100px;
+}
+.features__speach{
+   font-family: "Bebas Neue";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 24px;
+   letter-spacing: 2px;
+   color: #FFFFFF;
+   margin-top: 0px;
+   margin-bottom: 9px;
+}
+.features__hidding{
+   font-family: "Bebas Neue";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 80px;
+   line-height: 80px;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-top: 0px;
+   margin-bottom: 70px;
+}
+.features__box{
+   display: flex;
+}
+.features__titles-case{
+   margin-left: 30px;
+}
+.features__form{
+   position: absolute;
+   z-index: 1;
+   display: flex;
+   flex-direction: column;
+   top: 360px;
+   left: calc(50% + 90px);
+}
+.features__label:nth-child(2){
+   margin-top: 117px;
+   margin-bottom: 52px;
+}
+.features__controller{
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   border: 1.5px solid #fff;
+   border-radius: 50%;
+   transition: 0.2s ease;
+}
+.features__controller{
+   position: relative;
+   z-index: 1;
+}
+.features__input:checked ~ .features__controller{
+   background-color: #fff;
+}
+.features__input:checked ~ .features__controller::before{
+   content: "";
+   width: 2px;
+   height: 57px;
+   position: absolute;
+   z-index: 8;
+   background-color: #fff;
+   top: 14px;
+   left: 6px;
+}
+.features__input:checked ~ .features__controller--last::before{
+   content: none;
+}
+.features__input:checked ~ .features__controller--first::before{
+   width: 2px;
+   height: 121px;
+   top: 14px;
+   left: 6px;
+}
+
+.features__title{
+   font-family: "Bebas Neue";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 36px;
+   letter-spacing: 2px;
+   color: #FFB548;
+   margin: 0px;
+}
+.features__describe{
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 22px;
+   text-align: justify;
+   color: #FFFFFF;
+   margin-top: 0px;
+   margin-bottom: 30px;
+}
+.features__title:nth-child(1){
+   margin-bottom: 5px;
+}
+.features__title:nth-child(3){
+   margin-bottom: 35px;
+}

@@ -1,0 +1,147 @@
+.intro{
+   padding: 110px 0px 330px 0px;
+   background-image: url(../img/intro-bgimage.png);
+   background-repeat: no-repeat;
+   // background-position: calc(50% ) calc(50% + 50px);
+   background-size: 100%;
+   position: relative;
+   z-index: 1;
+}
+
+.intro__inner{
+   display: flex;
+}
+.intro__info{
+   // display: flex;
+   // flex-direction: column;
+   width: 550px;
+   margin-top: 70px;
+   margin-right: 30px;
+   // position: absolute;
+   z-index: 10;
+   padding-top: 100px;
+}
+.intro__speech{
+   font-family: "Bebas Neue";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 24px;
+   letter-spacing: 2px;
+   margin-top: 0px;
+   margin-bottom: 10px;
+   color: #FFFFFF;
+}
+.intro__title{
+   font-family: "Bebas Neue";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 80px;
+   line-height: 80px;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-top: 0px;
+   margin-bottom: 70px;
+   position: relative;
+   z-index: 1;
+   &::before{
+      content: "";
+      width: 710px;
+      height: 3px;
+      background-color: #FFFFFF;
+      position: absolute;
+      z-index: 5;
+      border-radius: 5px;
+      bottom: -10px;
+   }
+}
+.intro__describe-case{
+   width: 365px;
+   margin-left: auto;
+}
+.intro__describe{
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 22px;
+   text-align: justify;
+   color: #FFFFFF;
+   margin: 0px;
+}
+.intro__imges-case{
+   position: relative;
+   z-index: 1;
+}
+.intro__img:nth-child(1){
+   position: absolute;
+   z-index: 3;
+   top: 100px;
+}
+.intro__img:nth-child(2){
+   position: absolute;
+   z-index: 2;
+   top: 125px;
+   left: 100px;
+}
+.intro__img:nth-child(3){
+   position: absolute;
+   z-index: 1;
+   top: 150px;
+   left: 140px;
+}
+.intro__form{
+   position: absolute;
+   z-index: 8;
+   bottom: 260px;
+   right: 450px;
+}
+.intro__label + .intro__label{
+   margin-left: 50px;
+}
+.intro__input:checked ~ .intro__controller{
+   background-color: #fff;
+}
+.intro__controller{
+   position: relative;
+   z-index: 1;
+   transition: 0.2s ease;
+}
+.intro__input:checked ~ .intro__controller::before{
+   content: "";
+   width: 55px;
+   height: 2px;
+   position: absolute;
+   z-index: 8;
+   background-color: #fff;
+   top: 6px;
+   left: 14px;
+}
+.intro__input:checked ~ .intro__controller--last::before{
+   content: none;
+}
+.intro__controller{
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   border: 1.5px solid #fff;
+   border-radius: 50%;
+   transition: 0.2s ease;
+}
+
+
+.intro__button{
+   position: absolute;
+   z-index: 2;
+   background-color: transparent;
+   border: none;
+   left: calc(50% + 600px);
+   top: calc(50% - 40px);
+   &:hover > .intro__svg > .intro__path{
+      stroke: #FFB548;
+   }
+}
+.intro__path{
+   transition: 0.2s ease;
+}

@@ -1,0 +1,93 @@
+.subscribe{
+   padding-top: 72px;
+   background-color: #080A0B;
+}
+.subscribe__inside{
+   display: flex;
+   align-items: center;
+}
+.subscribe__img{
+   margin-left: 70px;
+   margin-right: 70px;
+}
+.subscribe__speach{
+   font-family: "Bebas Neue";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 24px;
+   letter-spacing: 2px;
+   color: #FFFFFF;
+   margin: 0px 0px 8px;
+}
+.subscribe__title{
+   font-family: "Bebas Neue";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 80px;
+   line-height: 80px;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   display: block;
+   margin: 0px;
+   margin-bottom: 35px;
+}
+.subscribe__describe{
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 22px;
+   color: #FFFFFF;
+   margin: 0px;
+   margin-bottom: 45px;
+}
+.subscribe__label{
+   margin-right: 20px;
+}
+.subscribe__input{
+   width: 370px;
+   padding: 12px 0px 15px 20px;
+   background: rgba(255, 255, 255, 0.08);
+   border-radius: 3px;
+   border: none;
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+   color: #FFB548;
+   outline: none;
+}
+.subscribe__input:focus{
+   color: #FFB548;
+}
+.subscribe__input::placeholder{
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 16px;
+   color: #FFFFFF;
+   mix-blend-mode: normal;
+   opacity: 0.5;
+}
+.subscribe__button{
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 19px;
+   text-align: center;
+   color: #1A1917;
+   border: none;
+   background-color: #FFB548;
+   padding: 15px 0px;
+   width: 260px;
+   border-radius: 4px;
+   cursor: pointer;
+   &:hover{
+      opacity: 0.85;
+   }
+}
